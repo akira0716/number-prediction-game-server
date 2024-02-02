@@ -7,6 +7,7 @@ const server = createServer(app);
 module.exports.io = new Server(server, {
   cors: {
     origin: process.env.REACT_APP_CLIENT,
+    methods: ["GET", "POST"],
   },
 });
 
