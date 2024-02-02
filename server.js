@@ -6,7 +6,7 @@ const app = express();
 const server = createServer(app);
 module.exports.io = new Server(server, {
   cors: {
-    origin: "https://number-prediction-game.vercel.app/",
+    origin: "https://number-prediction-game.vercel.app",
     methods: ["GET", "POST"],
   },
 });
