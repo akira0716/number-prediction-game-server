@@ -4,11 +4,7 @@ const { Server } = require("socket.io");
 
 const app = express();
 const server = createServer(app);
-module.exports.io = new Server(server, {
-  cors: {
-    origin: "http://localhost:8080",
-  },
-});
+module.exports.io = new Server(server);
 
 server.listen(3000, () => {
   console.log(`server running`);
